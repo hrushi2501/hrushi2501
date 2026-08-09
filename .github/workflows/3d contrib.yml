@@ -12,26 +12,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-3d-contrib
-
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: hrushi2501
           MAX_REPOS: 10
           SETTING_JSON: |
             {
-              "githubUserName": "hrushi2501",
-              "startFilled": true,
-              "angle": 50,
-              "flatStyle": false,
-              "settingMap": {
-                "season-animate": "profile-3d-contrib/profile-season-animate.svg"
-              }
+              "type": "normal",
+              "backgroundColor": "#0a0a0a",
+              "foregroundColor": "#c9c9c9",
+              "strongColor": "#e8e8e8",
+              "weakColor": "#2a2a2a",
+              "radarColor": "#6e6e6e",
+              "growingAnimation": true,
+              "contribColors": ["#161616", "#2a2a2a", "#444444", "#7a7a7a", "#e8e8e8"]
             }
-
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
