@@ -13,7 +13,7 @@
 
 ```
 next.js · typescript · react · tailwind · node · fastapi
-python · rust · postgres · supabase · docker
+python · postgres · supabase · docker
 ```
 
 <p align="center">
