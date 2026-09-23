@@ -18,9 +18,9 @@ python · postgres · supabase · docker
 
 <p align="center">
 <sub>
-CS @ Nirma University — CGPA 8.72<br/>
+CS @ Nirma University — CGPA 8.77<br/>
 Joint Secretary, CSI Nirma — 2300+ hackathon participants<br/>
-LeetCode peak 1798 — top 7.76% globally
+LeetCode peak 1823 — top 7.76% globally
 </sub>
 </p>
 
